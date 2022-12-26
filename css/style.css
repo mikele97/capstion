@@ -199,7 +199,7 @@ figure img{
 
 
 /* FOOTER */
-.footer h3{
+footer h3{
     font-size: 25px;
     line-height: 25px;
     margin-bottom: 30px;
@@ -233,8 +233,6 @@ figure img{
 .footer_logo a.logo:hover{
     color: #060606;
 }
-
-
 
 .footer_text{
     line-height: 24px;
@@ -270,16 +268,16 @@ figure img{
     border-radius: 0 30px 30px 0;
 }
 
-.footer .icon {
+footer .icon {
     list-style: none;
 }
 
-.footer .icon li{
+footer .icon li{
     display: inline;
     margin-right: 5px;
 }
 
-.footer .icon a {
+footer .icon a {
     color: var(--secondary-color);
     width: 35px;
     height: 35px;
@@ -289,11 +287,30 @@ figure img{
     text-align: center;
 }
 
-.footer .icon a span{
+footer .icon a span{
      color: #009f4d;
      font-size: 15px;
     line-height: 35px;
 }
 
 
-
+footer .backToTop{
+    position: fixed;
+    bottom: 90px;
+    right: 15px;
+    z-index: 9;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    background: #009f4d;
+    border-radius: 4px;
+}
+footer span{
+    display: none;
+}
