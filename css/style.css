@@ -5,6 +5,10 @@ body,html{
     background: #fff;
 }
 
+body h1,h2,h3,h4,h5{
+    font-family: 'Volkhov', serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -88,14 +92,21 @@ h3.title_style{
     content: '';
     width: 50%;
     height: 100%;
-    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
     transform: skewX(-17deg);
 }
 
-figure:hover::before{
-    content: "";
-    left: 100%;
+
+.content figure:hover::before{
+    animation: shine 0.95s;
 }
+
+@keyframes shine{
+    100%{
+        left: 125%;
+    }
+}
+
 
 
 .gallery_item .gall_text {
@@ -104,7 +115,7 @@ figure:hover::before{
     color: #fff;
     bottom: 0;
     font-weight: bold;
-    background: rgb(255,255,255 / 27%);
+    background: rgb(255 255 255 / 27%);
     padding: 6px;
     text-align: center;
     left: 0;
@@ -197,6 +208,11 @@ figure img{
     display: block;
 }
 
+.owl-dots.active span{
+    background: #fb811e;
+}
+
+
 
 /* FOOTER */
 footer h3{
@@ -220,6 +236,7 @@ footer h3{
     position: relative;
     font-size: 32px;
     color:#fb811e;
+    text-decoration: none;
     font-family: 'Volkhov', serif;
 }
 
@@ -229,6 +246,7 @@ footer h3{
     left: 54px;
     font-size: 20px;
 }
+
 
 .footer_logo a.logo:hover{
     color: #060606;
@@ -285,13 +303,24 @@ footer .icon a {
     display: inline-block;
     border-radius: 50%;
     text-align: center;
+    text-decoration: none;
 }
 
-footer .icon a span{
-     color: #009f4d;
-     font-size: 15px;
-    line-height: 35px;
+footer .icon a:hover{
+    color: var(--primary-color);
+    background: rgb(255 201 69 / 19%);
+    box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
 }
+
+
+footer .icon a{
+    color: #009f4d;
+    font-size: 15px;
+    line-height: 35px;
+
+}
+
+
 
 
 footer .backToTop{
