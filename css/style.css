@@ -175,7 +175,7 @@ figure img{
     height: 90px;
     display: inline-block;
     overflow: hidden;
-    background: var(--bg-color);
+    background: #fff;
     border-radius: 50%;
 }
 
@@ -208,7 +208,7 @@ figure img{
     display: block;
 }
 
-.owl-dots.active span{
+.owl-dots .owl-dot span{
     background: #fb811e;
 }
 
@@ -229,6 +229,11 @@ footer h3{
 
 .footer_info a{
    color: #707070;
+   text-decoration: none;
+}
+
+.footer_info a:hover{
+    color: #fb811e;
 }
 
 
@@ -256,8 +261,16 @@ footer h3{
     line-height: 24px;
 }
 
-.footer_text p a{
+.footer_text a{
     color: #009f4d
+}
+
+.footer_text p .mt5 a{
+    text-decoration: none;
+}
+
+.footer_text a:hover{
+    color: #fb811e;
 }
 
 .email_text{
@@ -296,7 +309,7 @@ footer .icon li{
 }
 
 footer .icon a {
-    color: var(--secondary-color);
+    color: #009f4d;
     width: 35px;
     height: 35px;
     background: rgb(10 191 83 / 8%);
@@ -307,7 +320,7 @@ footer .icon a {
 }
 
 footer .icon a:hover{
-    color: var(--primary-color);
+    color: #fb811e;
     background: rgb(255 201 69 / 19%);
     box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
 }
