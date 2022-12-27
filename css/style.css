@@ -135,6 +135,17 @@ figure img{
     background: url(https://wp.w3layouts.com/farmstead/wp-content/themes/farmstead/assets/images/bg1.jpg);
 }
 
+.carousel::before{
+    content: "";
+    background: rgb(10 10 10 / 52%);
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
 .owl-carousel .owl-stage-outer{
     position: relative;
     overflow: hidden;
