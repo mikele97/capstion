@@ -1,11 +1,11 @@
 body,html{
     font-family: 'Source Sans Pro', sans-serif; ;
     line-height: 1.15;
-    color: #707070;
+    color: var (#707070);
     background: #fff;
 }
 
-body h1,h2,h3,h4,h5{
+h1,h2,h3,h4,h5{
     font-family: 'Volkhov', serif;
 }
 
@@ -50,7 +50,7 @@ h3.title_style{
 .gallery_item p{
     font-size: 17px;
     line-height: 27px;
-    color: #707070;
+    color: var(#707070);
 }
 
 .gallery_item .btn{
@@ -66,6 +66,8 @@ h3.title_style{
     transition: all .25s ease-in-out;
 }
 
+
+
 .gallery .content{
     padding: 0;
 }
@@ -77,6 +79,7 @@ h3.title_style{
 .gallery_item a{
     background: transparent;
 }
+
 
 .content figure{
     overflow: hidden;
@@ -143,7 +146,7 @@ figure img{
     min-height: 100%;
     left: 0;
     right: 0;
-    z-index: -1;
+    z-index: 1;
 }
 
 .owl-carousel .owl-stage-outer{
@@ -219,15 +222,19 @@ figure img{
     display: block;
 }
 
-.owl-dots .owl-dot span{
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span{
     background: #fb811e;
 }
 
+button:focus{
+    outline: none;
+}
 
 
 /* FOOTER */
 footer h3{
-    font-size: 25px;
+    font-size: 20px;
     line-height: 25px;
     margin-bottom: 30px;
     font-weight: 600;
@@ -239,7 +246,7 @@ footer h3{
 }
 
 .footer_info a{
-   color: #707070;
+   color: var (#707070);
    text-decoration: none;
 }
 
@@ -270,13 +277,14 @@ footer h3{
 
 .footer_text{
     line-height: 24px;
+    font-size: 17px;
 }
 
 .footer_text a{
-    color: #009f4d;
+    color: #009f4d
 }
 
-.footer_text p .mt5 a{
+.footer_text p a{
     text-decoration: none;
 }
 
@@ -292,7 +300,7 @@ footer h3{
     width: 80%;
     font-size: 16px;
     background: #f4f4f4;
-    color: #707070;
+    color: var (#707070);
     outline: none;
     padding: 12px 20px;
     border: 1px solid #eee;
@@ -343,7 +351,6 @@ footer .icon a{
     line-height: 35px;
 
 }
-
 
 
 
