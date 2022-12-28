@@ -32,6 +32,9 @@
     <!-- Fancybox css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
 
+    <!-- LightGallery -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.8.3/dist/css/lightgallery.min.css">
+
     <!-- ANIMATE -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -64,7 +67,7 @@
                     <div class="gallery_item">
                         <a href="#">
                             <figure>
-                                <a href="./img/g1.jpeg" data-fancybox="gall_popup">
+                                <a href="./img/g1.jpeg">
                                     <img src="./img/g1.jpeg" alt="">
                                 </a>
                                 <h5 class="gall_text">Fresh Carrots</h5>
@@ -78,7 +81,7 @@
                     <div class="gallery_item">
                         <a href="#">
                             <figure>
-                                <a href="./img/g2.jpeg" data-fancybox="gall_popup">
+                                <a href="./img/g2.jpeg">
                                     <img src="./img/g2.jpeg" alt="">
                                 </a>
                                 <h5 class="gall_text">Strawberry</h5>
@@ -92,7 +95,7 @@
                     <div class="gallery_item">
                         <a href="#">
                             <figure>
-                                <a href="./img/g3.jpeg" data-fancybox="gall_popup">
+                                <a href="./img/g3.jpeg">
                                     <img src="./img/g3.jpeg" alt="">
                                 </a>
                                 <h5 class="gall_text">Our Farm</h5>
@@ -106,7 +109,7 @@
                     <div class="gallery_item">
                         <a href="#">
                             <figure>
-                                <a href="./img/g4.jpeg" data-fancybox="gall_popup">
+                                <a href="./img/g4.jpeg">
                                     <img src="./img/g4.jpeg" alt="">
                                 </a>
                                 <h5 class="gall_text">Fresh Apple</h5>
@@ -120,7 +123,7 @@
                     <div class="gallery_item">
                         <a href="#">
                             <figure>
-                                <a href="./img/g5.jpeg" data-fancybox="gall_popup">
+                                <a href="./img/g5.jpeg">
                                     <img src="./img/g5.jpeg" alt="">
                                 <a>
                                     <h5 class="gall_text">Awesome Fields</h5>
@@ -133,7 +136,7 @@
                     <div class="gallery_item">
                         <a href="#">
                             <figure>
-                                <a href="./img/g6.jpeg" data-fancybox="gall_popup">
+                                <a href="./img/g6.jpeg">
                                     <img src="./img/g6.jpeg" alt="">
                                 </a>
                                 <h5 class="gall_text">Fresh Grapes</h5>
@@ -146,7 +149,7 @@
                     <div class="gallery_item">
                         <a href="#">
                             <figure>
-                                <a href="./img/g7.jpeg" data-fancybox="gall_popup">
+                                <a href="./img/g7.jpeg">
                                     <img src="./img/g7.jpeg" alt="">
                                 </a>
                                 <h5 class="gall_text">Hot Papper</h5>
@@ -366,18 +369,19 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
     
+    <!-- Light Gallery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/lightgallery.min.js" integrity="sha512-pG+XpUdyBtp28FzjpaIaj72KYvZ87ZbmB3iytDK5+WFVyun8r5LJ2x1/Jy/KHdtzUXA0CUVhEnG+Isy1jVJAbA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    
     <script src="./js/main.js"></script>
     <script src="./js/util.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
 
 
     <script>
-        Fancybox.bind("[data-fancybox]", {
-        Image: {
-        zoom: false,
-
-        },
-    });
+        lightGallery(document.getElementById('animated-thumbnails-gallery'), {
+         thumbnail: true,
+        });
     </script>
 
     <script>
